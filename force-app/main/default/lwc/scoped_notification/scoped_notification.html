@@ -1,10 +1,10 @@
 <template>
     <div class={notificationCSS} role="status">
         <div class="slds-media__figure">
-            <lightning-icon icon-name={iconName} size={iconSize} alternative-text={iconTitle} title={iconTitle}></lightning-icon>
+            <slot name="icon"></slot>
         </div>
         <div class="slds-media__body">
-            <p>{bodyMessage}</p>
+            <slot name="body"></slot>
         </div>
     </div>
 </template>
